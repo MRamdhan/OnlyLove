@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan Musik Otomatis</title>
+</head>
+
+<body>
+    <audio id="background-audio" autoplay loop>
+        <source src="lagu.3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+    <h1>Selamat Datang di Website Saya!</h1>
+    <p>Nikmati musik saat Anda menjelajahi halaman ini.</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('background-audio');
+            if (audio) {
+                document.body.addEventListener('click', function() {
+                    if (audio.paused) {
+                        audio.play();
+                    }
+                });
+            } else {
+                console.error('Elemen audio tidak ditemukan.');
+            }
+        });
+    </script>
+</body>
+
+</html>
