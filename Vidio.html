@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f7f7f7;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 90%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media(max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media(max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .video {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 90%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        
+        .video video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media(max-width: 768px) {
+            .video {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media(max-width: 480px) {
+            .video {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .no-button {
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .no-button {
+            background-color: #b0b0b0;
+        }
+        
+        .next-button:hover {
+            background-color: #ff1493;
+        }
+        
+        .no-button:hover {
+            background-color: #8e8e8e;
+        }
+        
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff69b4;
+            margin: 20px 0;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src="asset/lagu2.MP3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h1 class="title">Liattt Moment Iniiii!!</h1>
+    <div class="gallery">
+        <video src="asset/v1.mp4" autoplay loop class="video"></video>
+        <video src="asset/v5.mp4" autoplay loop class="video"></video>
+        <video src="asset/v13.mp4" autoplay loop class="video"></video>
+        <video src="asset/v14.mp4" autoplay loop class="video"></video>
+        <video src="asset/v2.mp4" autoplay loop class="video"></video>
+        <video src="asset/v3.mp4" autoplay loop class="video"></video>
+        <video src="asset/v4.mp4" autoplay loop class="video"></video>
+        <video src="asset/v6.mp4" autoplay loop class="video"></video>
+        <video src="asset/v7.mp4" autoplay loop class="video"></video>
+        <video src="asset/v8.mp4" autoplay loop class="video"></video>
+        <video src="asset/v9.mp4" autoplay loop class="video"></video>
+        <video src="asset/v10.mp4" autoplay loop class="video"></video>
+        <video src="asset/v11.mp4" autoplay loop class="video"></video>
+        <video src="asset/v12.mp4" autoplay loop class="video"></video>
+        <video src="asset/v17.mp4" autoplay loop class="video"></video>
+        <video src="asset/v18.mp4" autoplay loop class="video"></video>
+    </div>
+    <div class="card" style="margin: 20px;">
+        <a href="Utama.html" class="no-button">Kemablii</a>
+    </div>
+</body>
+
+</html>
+
+</html>
